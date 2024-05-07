@@ -13,7 +13,6 @@ body {
 .oswald {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
 /* END FONTS */
@@ -34,13 +33,12 @@ body {
     justify-content: space-evenly;
     list-style: none;
     text-align: center;
-    background-color: #;
     margin-right: 30px;
     width: 150px;
     line-height: 60px;
 }
 
-.buttons li a {
+.buttons li, a {
     text-decoration: none;
     padding: 10px 10px;
 }
@@ -77,15 +75,44 @@ footer {
     padding: 5px 20px;
 }
 
+.work-section {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.skills-section {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
 /** work.html */
-.works {
-    display: inline-block;
+.cards {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.work {
-    border: solid 1px black;
+.card {
+    border: solid 1px #1d1d1d;
+    border-radius: 10px;
+    background-color: #cac8c4;
+    filter: drop-shadow(2px 2px 4px black);
+    width: 280px;
+    height: 340px;
+    padding: 15px 20px;
+    margin-left: 10px;
 }
 
+.card img {
+    width: 280px;
+    height: 140px;
+    margin-top: 10px;
+}
+
+.card h1, h5 {
+    margin: 0;
+}
+
+/***
 .projects {
     display: flex;
 }
@@ -123,6 +150,7 @@ footer {
     border-right: #cac8c4 1px solid;
     border-left: #cac8c4 1px solid;
 }
+*/
 
 .title {
     color: #1d1d1d;
@@ -131,4 +159,35 @@ footer {
 
 .tag {
     font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .buttons li {
+        margin-right: 5px;
+        width: 20px;
+        line-height: 60px;
+    }
+
+    #logo-image {
+        max-width: 80px;
+        padding-right: 10%;
+    }
+
+    .work-section {
+        flex-direction: column;
+    }
+
+    .skills-section {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
 }
