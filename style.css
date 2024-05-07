@@ -1,0 +1,134 @@
+body {
+    background-color: #E7E4DF;
+    color: #3D3115;
+    font-family: oswald;
+}
+
+/**  FONTS **/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* END FONTS */
+
+#logo-image {
+    max-width: 136px;
+    padding: 1%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+    background-color: #;
+    margin-right: 30px;
+    width: 150px;
+    line-height: 60px;
+}
+
+.buttons li a {
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-image {
+    max-width: 400px;
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: #cac8c4;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 150px;
+}
+
+#social-media-links {
+    padding: 5px 20px;
+}
+
+/** work.html */
+.works {
+    display: inline-block;
+}
+
+.work {
+    border: solid 1px black;
+}
+
+.projects {
+    display: flex;
+}
+
+.project {
+    background-color: #1d1d1d;
+    border: #cac8c4 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 502px;
+    height: 810px;
+    margin: 10px 10px;
+}
+
+.project img {
+    width: 423px;
+    height: 237px;
+}
+
+.project p {
+    color: #cac8c4;
+    padding: 40px;
+}
+
+.project-header {
+    background-color: #cac8c4;
+    width: 502px;
+    height: 113px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    font-family: Bebas Neue;
+    border-top: #cac8c4 1px solid;
+    border-right: #cac8c4 1px solid;
+    border-left: #cac8c4 1px solid;
+}
+
+.title {
+    color: #1d1d1d;
+    font-size: 48px;
+}
+
+.tag {
+    font-size: 20px;
+}
